@@ -28,4 +28,9 @@ sunset_time_object = sunset_time_object.replace(tzinfo=None)
 
 countdown = sunset_time_object - timeisobject
 
-print('Sekunder tilbage før solnedgang :', countdown.seconds)
+seconds = countdown.seconds
+
+# 1 day = 86400 Sec's
+
+while seconds > 86400:
+    print('Sekunder tilbage før solnedgang :', countdown.seconds)
