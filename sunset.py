@@ -32,7 +32,7 @@ seconds = countdown.seconds
 
 # 1 day = 86400 Sec's
 
-while seconds > 86400:
+while seconds < 86400:
     print('Sekunder tilbage før solnedgang :', countdown.seconds)
 
 print('Klokken er nu:', timeis, 'og solen er gået ned')
